@@ -41,7 +41,7 @@
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    box-shadow: 1px 5px 10px 3px #322c2d;
+    box-shadow: 0 2px 5px 1px #322c2d;
   }
 .operator_button{
     background: steelblue;
