@@ -11,10 +11,11 @@ import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 import Logo from "./components/DisplayComponents/Logo";
 
 function App(props) {
+  const [display, setDisplay] = useState('0')
   const [number, setNumber] = useState('0')
 
-  const handleClick = (event) =>{
-    
+  const updateDisplay = (value) => {
+    setDisplay(display + value);
   }
   
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -30,11 +31,11 @@ function App(props) {
       </div>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display />
+        <Display display={display} />
         <div className="keypad_container">  
           <div className="number_column">
           <Specials />
-          <Numbers />
+          <Numbers updateDisplay={updateDisplay} />
           </div>
           <Operators />
         </div>
