@@ -21,7 +21,7 @@
     height: 100px;
     width: 450px;
     border-radius: 50px;
-    color: white;
+    color: khaki;
     background-color: #322c2d;
     box-shadow: 0 0 10px 15px firebrick;
     display: flex;
@@ -41,7 +41,7 @@
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    box-shadow: 1px 10px 10px 5px #322c2d;
+    box-shadow: 1px 5px 10px 3px #322c2d;
   }
 .operator_button{
     background: steelblue;
