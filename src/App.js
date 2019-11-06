@@ -9,19 +9,36 @@ import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import { parse } from "@babel/core";
 
 function App(props) {
   const [display, setDisplay] = useState('')
   const [number, setNumber] = useState('')
   const [storedNumber, setStoredNumber] = useState('')
 
+  const clearDisplay = () => {
+    setDisplay('');
+  }
   const updateDisplay = (value) => {
       setDisplay(display + value);
   }
-  
-  
+  const add = (a, b) => {
+    const sum = parseFloat(a) + parseFloat(b);
+    return sum;
+  }
+  const subtract = (a, b) => {
+    const diff = parseFloat(a) - parseFloat(b);
+    return diff;
+  }
+  const multiply = (a, b) => {
+    const prod = parseFloat(a) * parseFloat(b);
+    return prod;
+  }
+  const divide = (a, b) => {
+    const quot = parseFloat(a) / parseFloat(b);
+    return quot;
+  }
 
-  
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
@@ -38,7 +55,7 @@ function App(props) {
         <Display display={display} />
         <div className="keypad_container">  
           <div className="number_column">
-          <Specials />
+          <Specials clearDisplay={clearDisplay}/>
           <Numbers updateDisplay={updateDisplay} />
           </div>
           <Operators />
