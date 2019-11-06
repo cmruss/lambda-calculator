@@ -23,7 +23,7 @@
     border-radius: 50px;
     color: khaki;
     background-color: #322c2d;
-    box-shadow: 0 0 10px 15px firebrick;
+    box-shadow: -1px -1px 10px 10px darkred;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
