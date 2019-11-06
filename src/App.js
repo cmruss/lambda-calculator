@@ -11,11 +11,12 @@ import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 import Logo from "./components/DisplayComponents/Logo";
 
 function App(props) {
-  const [display, setDisplay] = useState('0')
-  const [number, setNumber] = useState('0')
+  const [display, setDisplay] = useState('')
+  const [number, setNumber] = useState('')
+  const [storedNumber, setStoredNumber] = useState('')
 
   const updateDisplay = (value) => {
-    setDisplay(display + value);
+      setDisplay(display + value);
   }
   
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.

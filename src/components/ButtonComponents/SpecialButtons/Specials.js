@@ -6,7 +6,7 @@ import {specials} from "../../../data";
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [special, setSpecial] = useState(specials);
 

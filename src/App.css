@@ -30,20 +30,26 @@
     font-size: 5.0rem;
   }
   button {
-    background: midnightblue;
+    background: rgb(50, 50, 116);
     color: #fff;
     margin: 0.3rem;
+    margin-top: 3%;
     font-size: 2.6rem;
-    border: 1px solid #0a0a0a;
+    border:none;
     border-radius: 50%;
     width: 90px;
     height: 90px;
+    box-shadow: 1px 5px #322c2d;
   }
 .operator_button{
     background: steelblue;
 }
 .special_button{
     background: royalblue;
+}
+.number_button:nth-child(10){
+    width: 210px;
+    border-radius: 50px;
 }
 .number_pad, .special_row{
     width: 350px;
@@ -60,6 +66,8 @@
 .operator_column{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 /* *{
     border: 2px solid black;
