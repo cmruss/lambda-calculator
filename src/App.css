@@ -6,6 +6,15 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+.logo_container{
+    margin: 25px 0 0 25px;
+}
+.App{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .display {
     margin-top: 25px;
     height: 100px;
@@ -20,3 +29,38 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  button {
+    background: midnightblue;
+    color: #fff;
+    margin: 0.3rem;
+    font-size: 2.6rem;
+    border: 1px solid #0a0a0a;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+  }
+.operator_button{
+    background: steelblue;
+}
+.special_button{
+    background: royalblue;
+}
+.number_pad, .special_row{
+    width: 350px;
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.keypad_container{
+    display: flex;
+    margin: 25px;
+    
+}
+.operator_column{
+    display: flex;
+    flex-direction: column;
+}
+/* *{
+    border: 2px solid black;
+} */
