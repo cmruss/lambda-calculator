@@ -3,20 +3,74 @@
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
-    border: 2px solid grey;
+    border: 2px solid firebrick;
     padding-bottom: 25px;
+    box-shadow: 2px 10px 3px 5px firebrick;
+}
+.logo_container{
+    margin: 25px 0 0 25px;
+}
+.App{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .display {
     margin-top: 25px;
     height: 100px;
     width: 450px;
     border-radius: 50px;
-    color: white;
+    color: khaki;
     background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
+    box-shadow: -1px -1px 10px 10px darkred;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+    font-family: Digital-7;
   }
+  button {
+    background: rgb(50, 50, 116);
+    color: #fff;
+    margin: 0.3rem;
+    margin-top: 3%;
+    font-size: 2.6rem;
+    border:none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 2px 5px 1px #322c2d;
+  }
+.operator_button{
+    background: steelblue;
+}
+.special_button{
+    background: royalblue;
+}
+.number_button:nth-child(10){
+    width: 210px;
+    border-radius: 50px;
+}
+.number_pad, .special_row{
+    width: 350px;
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.keypad_container{
+    display: flex;
+    margin: 25px;
+    
+}
+.operator_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+/* *{
+    border: 2px solid black;
+} */
